@@ -1,0 +1,86 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 61px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  box-shadow: 0 0 3px 3px #FF1493;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 4px;
+  left: 2px;
+  bottom: 1px;
+  background-color: #F75394;
+  -webkit-transition: .1s;
+  transition: .1s;
+  border-radius: 4px;
+}
+
+input:checked + .slider {
+  box-shadow: 0 0 3px 3px #41B883;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(38.1px);
+  -ms-transform: translateX(38.1px);
+  transform: translateX(38.1px);
+  background: #41B883;
+  left: 17px;
+}
+
+/* Rounded sliders */
+.slider.round{
+  border-radius: 4px;
+}
+
+.slider.round:before {
+  background: #F75394;
+}
+
+.slider:after {
+  font-family: "consolas"; 
+  position: absolute;
+  content: "off";
+  color: #F75394;
+  height: 16px;
+  width: 16px;
+  top: 0px;
+  left: 22.5px;
+  bottom: 5px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+input:checked + .slider:after {
+  font-family: "consolas"; 
+  position: absolute;
+  content: "on";
+  color: #41B883;
+  height: 16px;
+  width: 16px;
+  top: 0px;
+  left: 22.5px;
+  bottom: 5px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}

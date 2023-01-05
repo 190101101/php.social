@@ -1,0 +1,82 @@
+body {
+  background: #000 !important;
+  padding-top: 56px;
+  color: #B5B8B1 !important;
+  /*word-break: break-all;*/
+}
+
+.card{
+  background: #18171C !important;
+  color: #fff !important;
+}
+
+.list-group-item{
+  background: #18171C !important; 
+}
+
+.jumbotron{
+  background: #18171C !important; 
+}
+
+.breadcrumb{
+  background: #18171C !important; 
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  color: inherit !important;
+}
+
+.portfolio-item a{
+  text-decoration: none !important;
+  outline: none;
+  color: inherit;
+}
+
+.portfolio-item a:hover{
+  color: inherit;
+}
+
+
+a{
+  text-decoration: none !important;
+  outline: none;
+}
+
+textarea{
+  resize: none !important;
+}
+
+
+pre{
+  color: #fff !important;
+}
+
+.lead{
+  word-break: break-all;
+}
+
+
+
+@media only screen and (min-width: 994px) {
+.breadcrumb{
+  height: 48px !important;
+  position: relative;
+}
+
+  .breadcrumb form{
+    right: 17px;
+    position: absolute;
+    top: 7.5px;
+  }
+}

@@ -1,0 +1,31 @@
+cookie var?:
+
+!var
+	ip var?:
+
+		!var
+			update
+            
+            create last visit cookie:
+            read cookie:
+
+		!yox
+			create
+
+            create last visit cookie:
+            read cookie:
+
+!yox
+    ip var?:
+
+        !var
+            update
+
+            create last visit cookie:
+            read cookie:
+                
+        !yox
+            create
+    
+            create last visit cookie:
+            read cookie:

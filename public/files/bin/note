@@ -1,0 +1,3 @@
+ownArticle
+        $time_diff = time_diff($article->article_created, date('Y-m-d H:i:s'))->i > 5 ? FALSE : TRUE;
+        ddx($time_diff);
